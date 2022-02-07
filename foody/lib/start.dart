@@ -89,25 +89,7 @@ class HomePage extends StatelessWidget {
               ],
             ),
             SizedBox(height: 50,),
-            Column(
-              children: [
-                Text(
-                  'Design by',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 10
-                  ),
-                ),
-                Text(
-                  '@mcnaagib_',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 15
-                  ),
-                )
-              ],
-            ),
-            SizedBox(height: 50,)
+            
           ],
         ),
       ),

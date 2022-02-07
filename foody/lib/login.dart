@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:foody/home.dart';
 import 'package:foody/icons/my_icons_icons.dart';
 import 'package:foody/theme.dart';
 
@@ -90,7 +91,13 @@ class _loginState extends State<login> {
                   backgroundColor: const Color(0xff0672AF),
                   foregroundColor: Colors.white,
                   onPressed: () {
-                    
+                    Navigator.push(
+                      context, MaterialPageRoute(
+                        builder: (context){
+                          return Home();
+                        }
+                      )
+                    );
                   },
                   label: Text(
                     '                           Login                           ',
@@ -150,7 +157,7 @@ class _loginState extends State<login> {
                 ),
               ],
             ),
-            SizedBox(height: 40,),
+            SizedBox(height: 30,),
             Column(
               children: [
                 Text(
