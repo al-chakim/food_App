@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:foody/icons/my_icons_icons.dart';
 import 'package:foody/theme.dart';
 
 class login extends StatefulWidget {
@@ -12,13 +13,15 @@ class login extends StatefulWidget {
 }
 
 class _loginState extends State<login> {
+  get isSelected => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: ListView(
           children: [
-            SizedBox(height: 70,),
+            SizedBox(height: 30,),
             Column(
               children: [
                 Image.asset(
@@ -54,7 +57,7 @@ class _loginState extends State<login> {
                       labelText: 'Username',
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 15,),
                   TextField(
                     autofocus: false,
                     obscureText: true,
@@ -95,7 +98,7 @@ class _loginState extends State<login> {
                 ),
               ],
             ),
-            SizedBox(height: 30,),
+            SizedBox(height: 20,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -115,7 +118,39 @@ class _loginState extends State<login> {
                 )
               ],
             ),
-            SizedBox(height: 50,),
+            SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: (){}, 
+                  icon: Icon(
+                    MyIcons.gugel, 
+                    size: 24,
+                    color: biruTua,
+                  ),
+                ),
+                SizedBox(width: 10,),
+                IconButton(
+                  onPressed: (){}, 
+                  icon: Icon(
+                    MyIcons.apel, 
+                    size: 27,
+                    color: biruTua,
+                  ),
+                ),
+                SizedBox(width: 10,),
+                IconButton(
+                  onPressed: (){}, 
+                  icon: Icon(
+                    MyIcons.facebook_squared, 
+                    size: 30,
+                    color: biruTua,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 40,),
             Column(
               children: [
                 Text(
