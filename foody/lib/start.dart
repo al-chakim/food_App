@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foody/login.dart';
 import 'theme.dart';
 
 class HomePage extends StatelessWidget {
@@ -21,7 +22,7 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 72,),
+            SizedBox(height: 10,),
             Column(
               children: [
                 Image.asset(
@@ -73,14 +74,40 @@ class HomePage extends StatelessWidget {
                   backgroundColor: const Color(0xff0672AF),
                   foregroundColor: Colors.white,
                   onPressed: () {
-                    // Respond to button press
+                    Navigator.push(
+                      context, MaterialPageRoute(
+                        builder: (context){
+                          return login();
+                        }
+                      )
+                    );
                   },
                   label: Text(
                     '          Get Started          ',
                   ),
                 ),
               ],
-            )
+            ),
+            SizedBox(height: 50,),
+            Column(
+              children: [
+                Text(
+                  'Design by',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 10
+                  ),
+                ),
+                Text(
+                  '@mcnaagib_',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 15
+                  ),
+                )
+              ],
+            ),
+            SizedBox(height: 50,)
           ],
         ),
       ),
