@@ -120,7 +120,7 @@ class _loginState extends State<login> {
                   style: TextStyle(
                     fontSize: 13,
                     color: biruTua,
-                    fontWeight: FontWeight.w500
+                    fontWeight: FontWeight.w700,
                   ),
                 )
               ],
