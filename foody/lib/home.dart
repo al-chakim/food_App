@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:foody/theme.dart';
 
+import 'icons/my_icons_icons.dart';
+
 class Home extends StatefulWidget {
   const Home({ Key? key }) : super(key: key);
 
@@ -26,14 +28,25 @@ class _HomeState extends State<Home> {
               ),
               child: Row(
                 children: [
-                  FloatingActionButton.extended(
-                    backgroundColor: const Color(0xffD1EEFF),
-                    foregroundColor: Colors.white,
-                    onPressed: () {
+                  IconButton(
+                    onPressed: (){
                       Navigator.pop(context);
-                    },
-                    label: Text(
-                      '     Login     ',
+                    }, 
+                    icon: Icon(
+                      Icons.arrow_back,
+                      size: 24,
+                      color: Colors.white,
+                    ),
+                  ),
+                  
+                  IconButton(
+                    onPressed: (){
+                      
+                    }, 
+                    icon: Icon(
+                      Icons.shopping_cart_outlined,
+                      size: 24,
+                      color: Colors.white,
                     ),
                   ),
                 ],
