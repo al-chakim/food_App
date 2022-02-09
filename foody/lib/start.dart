@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 70,),
+            SizedBox(height: 100,),
             Column(
               children: [
                 FloatingActionButton.extended(
