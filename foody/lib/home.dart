@@ -19,42 +19,61 @@ class _HomeState extends State<Home> {
           children: [
             Container(
               width: double.infinity,
-              padding: EdgeInsets.all(30),
+              padding: EdgeInsets.only(
+                top: 30,
+                left: 15,
+                right: 15
+              ),
               decoration: BoxDecoration(
                 color: biruTua,
                 borderRadius: BorderRadius.vertical(
                   bottom: Radius.circular(50),
                 ),
               ),
-              child: Row(
+              child: Column(
                 children: [
-                  IconButton(
-                    onPressed: (){
-                      Navigator.pop(context);
-                    }, 
-                    icon: Icon(
-                      Icons.arrow_back,
-                      size: 24,
-                      color: Colors.white,
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      IconButton(
+                        onPressed: (){
+                          Navigator.pop(context);
+                        }, 
+                        icon: Icon(
+                          Icons.arrow_back,
+                          size: 24,
+                          color: Colors.white,
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: (){
+                          
+                        }, 
+                        icon: Icon(
+                          Icons.shopping_cart_outlined,
+                          size: 24,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
                   ),
-                  
-                  IconButton(
-                    onPressed: (){
-                      
-                    }, 
-                    icon: Icon(
-                      Icons.shopping_cart_outlined,
-                      size: 24,
-                      color: Colors.white,
-                    ),
+                  SizedBox(height: 70,),
+                  Row(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 30
+                        )
+                      ),
+                      Text('kuy')
+                    ],
                   ),
+                  SizedBox(height: 30,)
                 ],
               ),
             ),
             Row(
               children: [
-
               ],
             )
           ],
