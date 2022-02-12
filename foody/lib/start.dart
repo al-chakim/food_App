@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foody/login.dart';
 import 'theme.dart';
 
-class HomePage extends StatelessWidget {
+class Start extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {

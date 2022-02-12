@@ -267,21 +267,21 @@ class _HomeState extends State<Home> {
               IconButton(
                 padding: EdgeInsets.only(left: 30, right: 40),
                 icon: 
-                Icon(Icons.bookmark), 
+                Icon(Icons.notifications_outlined), 
                 onPressed: () {},
                 color: Colors.white,
               ),
               IconButton(
                 padding: EdgeInsets.only(left: 25, right: 30),
                 icon: 
-                Icon(Icons.download_rounded), 
+                Icon(Icons.favorite_border_outlined), 
                 onPressed: () {},
                 color: Colors.white,
               ),
               IconButton(
                 padding: EdgeInsets.only(left: 30, right: 40),
                 icon: 
-                Icon(Icons.account_circle), 
+                Icon(Icons.account_circle_outlined), 
                 onPressed: () {},
                 color: Colors.white,
               ),
