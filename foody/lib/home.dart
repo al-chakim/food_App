@@ -252,6 +252,42 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+          color: biruTua,
+          child: Row(
+            children: [
+              Padding(padding: EdgeInsets.all(10)),
+              IconButton(
+                padding: EdgeInsets.only(left: 35, right: 30),
+                icon: 
+                Icon(Icons.home), 
+                onPressed: () {},
+                color: Colors.white,
+              ),
+              IconButton(
+                padding: EdgeInsets.only(left: 30, right: 40),
+                icon: 
+                Icon(Icons.bookmark), 
+                onPressed: () {},
+                color: Colors.white,
+              ),
+              IconButton(
+                padding: EdgeInsets.only(left: 25, right: 30),
+                icon: 
+                Icon(Icons.download_rounded), 
+                onPressed: () {},
+                color: Colors.white,
+              ),
+              IconButton(
+                padding: EdgeInsets.only(left: 30, right: 40),
+                icon: 
+                Icon(Icons.account_circle), 
+                onPressed: () {},
+                color: Colors.white,
+              ),
+            ],
+          ),
+        )
     );
   }
 }
