@@ -112,7 +112,7 @@ class _HomeState extends State<Home> {
                 ActionChip(
                   //avatar: Icon(Icons.favorite),
                   label: Text(
-                    'Rice',
+                    '  Rice  ',
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,
@@ -133,13 +133,27 @@ class _HomeState extends State<Home> {
                 ),
                 ActionChip(
                   //avatar: Icon(Icons.favorite),
-                  label: Text('Soup'),
+                  label: Text('  Soup  '),
                   onPressed: () {},
                 ),
                 ActionChip(
                   //avatar: Icon(Icons.favorite),
                   label: Text('Coffee'),
                   onPressed: () {},
+                ),
+              ],
+            ),
+            SizedBox(height: 10,),
+            Row(
+              children: [
+                Padding(padding: EdgeInsets.only(left: 8)),
+                Text(
+                  'Top Picks For You',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18
+                  ),
                 ),
               ],
             )
