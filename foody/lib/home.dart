@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
                           Navigator.pop(context);
                         }, 
                         icon: Icon(
-                          Icons.arrow_back,
+                          Icons.settings_outlined,
                           size: 30,
                           color: Colors.white,
                         )
@@ -152,11 +152,103 @@ class _HomeState extends State<Home> {
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.w600,
-                    fontSize: 18
+                    fontSize: 20
                   ),
                 ),
               ],
-            )
+            ),
+            SizedBox(height: 15,),
+            Card(
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 13, 
+                      right: 13
+                    ),
+                    child: Image.asset(
+                      'assets/images/nasgor.jpg',
+                    ),
+                  ),
+                  ListTile(
+                    contentPadding: EdgeInsets.only(left: 13),
+                    title: Text(
+                      'Nasi Goreng',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18
+                      ),
+                    ),
+                    subtitle: Text(
+                      'Nasi goreng + ayam + so...',
+                      style: TextStyle(
+                        color: Colors.black54
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 280),
+                    child: Text(
+                      'Rp23.000',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 18
+                      ),
+                      ),
+                  ),
+                  SizedBox(height: 20,)
+                ],
+              ),
+            ),
+            SizedBox(height: 15,),
+            Card(
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 13, 
+                      right: 13
+                    ),
+                    child: Image.asset(
+                      'assets/images/naskok.jpg',
+                    ),
+                  ),
+                  ListTile(
+                    contentPadding: EdgeInsets.only(left: 13),
+                    title: Text(
+                      'Rice Bowl',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18
+                      ),
+                    ),
+                    subtitle: Text(
+                      'Nasi liwet + cumi pedas + te...',
+                      style: TextStyle(
+                        color: Colors.black54
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 280),
+                    child: Text(
+                      'Rp20.000',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 18
+                      ),
+                      ),
+                  ),
+                  SizedBox(height: 20,)
+                ],
+              ),
+            ),
           ],
         ),
       ),
