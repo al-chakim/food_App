@@ -32,7 +32,6 @@ class _HomeState extends State<Home> {
               child: Column(
                 children: [
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       IconButton(
                         onPressed: (){
@@ -40,11 +39,12 @@ class _HomeState extends State<Home> {
                         }, 
                         icon: Icon(
                           Icons.settings_outlined,
-                          size: 30,
+                          size: 28,
                           color: Colors.white,
                         )
                       ),
                       //buat bikin teks input pencarian
+                      Spacer(),
                       IconButton(
                         onPressed: (){
                           
@@ -52,9 +52,9 @@ class _HomeState extends State<Home> {
                         icon: Icon(
                           Icons.shopping_cart_outlined,
                           color: Colors.white,
-                          size: 30,
+                          size: 28,
                         )
-                      )
+                      ),
                     ],
                   ),
                   SizedBox(height: 30,),
