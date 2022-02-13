@@ -38,8 +38,8 @@ class _HomeState extends State<Home> {
                           Navigator.pop(context);
                         }, 
                         icon: Icon(
-                          Icons.settings_outlined,
-                          size: 28,
+                          Icons.menu_rounded,
+                          size: 30,
                           color: Colors.white,
                         )
                       ),
@@ -258,28 +258,35 @@ class _HomeState extends State<Home> {
             children: [
               Padding(padding: EdgeInsets.all(10)),
               IconButton(
-                padding: EdgeInsets.only(left: 35, right: 30),
+                padding: EdgeInsets.only(left: 20, right: 15),
                 icon: 
                 Icon(Icons.home), 
                 onPressed: () {},
                 color: Colors.white,
               ),
               IconButton(
-                padding: EdgeInsets.only(left: 30, right: 38),
+                padding: EdgeInsets.only(left: 33, right: 30),
+                icon: 
+                Icon(Icons.search), 
+                onPressed: () {},
+                color: Colors.white,
+              ),
+              IconButton(
+                padding: EdgeInsets.only(left: 17, right: 30),
+                icon: 
+                Icon(Icons.favorite_outline), 
+                onPressed: () {},
+                color: Colors.white,
+              ),
+              IconButton(
+                padding: EdgeInsets.only(left: 20, right: 25),
                 icon: 
                 Icon(Icons.notifications_outlined), 
                 onPressed: () {},
                 color: Colors.white,
               ),
               IconButton(
-                padding: EdgeInsets.only(left: 25, right: 30),
-                icon: 
-                Icon(Icons.favorite_border_outlined), 
-                onPressed: () {},
-                color: Colors.white,
-              ),
-              IconButton(
-                padding: EdgeInsets.only(left: 30, right: 40),
+                padding: EdgeInsets.only(left: 25, right: 25),
                 icon: 
                 Icon(Icons.account_circle_outlined), 
                 onPressed: () {},
