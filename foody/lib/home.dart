@@ -243,7 +243,7 @@ class _HomeState extends State<Home> {
                         fontWeight: FontWeight.w700,
                         fontSize: 18
                       ),
-                      ),
+                    ),
                   ),
                   SizedBox(height: 20,)
                 ],
@@ -265,7 +265,7 @@ class _HomeState extends State<Home> {
                 color: Colors.white,
               ),
               IconButton(
-                padding: EdgeInsets.only(left: 30, right: 40),
+                padding: EdgeInsets.only(left: 30, right: 38),
                 icon: 
                 Icon(Icons.notifications_outlined), 
                 onPressed: () {},
