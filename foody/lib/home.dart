@@ -96,8 +96,8 @@ class _HomeState extends State<Home> {
                       Spacer(),
                       Image.asset(
                         'assets/images/human.png',
-                        height: 170,
-                        width: 170,
+                        height: 175,
+                        width: 175,
                       )
                     ],
                   ),
