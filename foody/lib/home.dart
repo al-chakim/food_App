@@ -45,6 +45,15 @@ class _HomeState extends State<Home> {
                       ),
                       //buat bikin teks input pencarian
                       Spacer(),
+                      Text(
+                        'FoodAddict',
+                        style: TextStyle(
+                          color: biru,
+                          fontSize: 25,
+                          fontWeight: FontWeight.w700
+                        ),
+                      ),
+                      Spacer(),
                       IconButton(
                         onPressed: (){
                           
