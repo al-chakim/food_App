@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foody/fav.dart';
 import 'package:foody/theme.dart';
 
 
@@ -292,7 +293,15 @@ class _HomeState extends State<Home> {
                 padding: EdgeInsets.only(left: 20, right: 25),
                 icon: 
                 Icon(Icons.favorite_border_outlined), 
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(
+                        builder: (context){
+                          return favorite();
+                        }
+                      )
+                    );
+                },
                 color: Colors.white,
               ),
               IconButton(
