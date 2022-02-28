@@ -43,7 +43,16 @@ class _HomeState extends State<Home> {
                           color: Colors.white,
                         )
                       ),
+                      Spacer(),
                       //buat bikin teks input pencarian
+                      Text(
+                        'FoodAddict',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 25
+                        ),
+                      ),
                       Spacer(),
                       IconButton(
                         onPressed: (){
@@ -275,14 +284,14 @@ class _HomeState extends State<Home> {
               IconButton(
                 padding: EdgeInsets.only(left: 17, right: 30),
                 icon: 
-                Icon(Icons.favorite_outline), 
+                Icon(Icons.notifications_outlined), 
                 onPressed: () {},
                 color: Colors.white,
               ),
               IconButton(
                 padding: EdgeInsets.only(left: 20, right: 25),
                 icon: 
-                Icon(Icons.notifications_outlined), 
+                Icon(Icons.favorite_border_outlined), 
                 onPressed: () {},
                 color: Colors.white,
               ),
