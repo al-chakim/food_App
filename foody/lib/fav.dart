@@ -14,7 +14,64 @@ class _favoriteState extends State<favorite> {
     return Scaffold(
       body: SafeArea(
         child: ListView(
-          
+          children: [
+            SizedBox(height: 15,),
+            Row(
+              children: [
+                IconButton(
+                  onPressed: (){
+                    
+                  }, 
+                  icon: Icon(
+                  Icons.menu_rounded,
+                  size: 30,
+                  color: biruTua,
+                  )
+                ),
+                Spacer(),
+                Text(
+                  'Favorite Food',
+                  style: TextStyle(
+                    fontSize: 16.5,
+                    fontWeight: FontWeight.w500
+                  ),
+                ),
+                Spacer(),
+                IconButton(
+                  onPressed: (){
+                    
+                  }, 
+                  icon: Icon(
+                  Icons.shopping_cart_outlined,
+                  color: biruTua,
+                  size: 28,
+                  )
+                ),
+              ],
+            ),
+            SizedBox(height: 150,),
+            Column(
+              children: [
+                Image.asset(
+                  'assets/images/fav.png',
+                ),
+                SizedBox(height: 20,),
+                Text(
+                  'You don`t have a favorite food yet. Let`s add',
+                  style: TextStyle(
+                    color: Colors.black45
+                  ),
+                ),
+                SizedBox(height: 10,),
+                Text(
+                  'your favorite food',
+                  style: TextStyle(
+                    color: Colors.black45
+                  ),
+                )
+              ],
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
@@ -50,13 +107,7 @@ class _favoriteState extends State<favorite> {
                 icon: 
                 Icon(Icons.favorite), 
                 onPressed: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(
-                        builder: (context){
-                          return favorite();
-                        }
-                      )
-                    );
+                  
                 },
                 color: Colors.white,
               ),

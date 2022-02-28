@@ -64,6 +64,7 @@ flutter:
     - assets/images/human.png
     - assets/images/nasgor.jpg
     - assets/images/naskok.jpg
+    - assets/images/fav.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
