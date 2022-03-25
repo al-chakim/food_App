@@ -266,31 +266,32 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: BottomAppBar(
           color: biruTua,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Padding(padding: EdgeInsets.all(10)),
+              //Padding(padding: EdgeInsets.all(10)),
               IconButton(
-                padding: EdgeInsets.only(left: 20, right: 15),
+                //padding: EdgeInsets.only(left: 20, right: 15),
                 icon: 
                 Icon(Icons.home), 
                 onPressed: () {},
                 color: Colors.white,
               ),
               IconButton(
-                padding: EdgeInsets.only(left: 33, right: 30),
+                //padding: EdgeInsets.only(left: 33, right: 30),
                 icon: 
                 Icon(Icons.search), 
                 onPressed: () {},
                 color: Colors.white,
               ),
               IconButton(
-                padding: EdgeInsets.only(left: 17, right: 30),
+                //padding: EdgeInsets.only(left: 17, right: 30),
                 icon: 
                 Icon(Icons.notifications_outlined), 
                 onPressed: () {},
                 color: Colors.white,
               ),
               IconButton(
-                padding: EdgeInsets.only(left: 20, right: 25),
+                //padding: EdgeInsets.only(left: 20, right: 25),
                 icon: 
                 Icon(Icons.favorite_border_outlined), 
                 onPressed: () {
@@ -305,7 +306,7 @@ class _HomeState extends State<Home> {
                 color: Colors.white,
               ),
               IconButton(
-                padding: EdgeInsets.only(left: 25, right: 25),
+                //padding: EdgeInsets.only(left: 25, right: 25),
                 icon: 
                 Icon(Icons.account_circle_outlined), 
                 onPressed: () {},
