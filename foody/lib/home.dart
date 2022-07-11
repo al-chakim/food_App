@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foody/fav.dart';
-import 'package:foody/theme.dart';
+import 'package:foodaddict/theme.dart';
 
 
 class Home extends StatefulWidget {
@@ -46,12 +45,30 @@ class _HomeState extends State<Home> {
                       ),
                       Spacer(),
                       //buat bikin teks input pencarian
-                      Text(
-                        'FoodAddict',
-                        style: TextStyle(
+                      // Text(
+                      //   'FoodAddict',
+                      //   style: TextStyle(
+                      //     color: Colors.white,
+                      //     fontWeight: FontWeight.w700,
+                      //     fontSize: 25
+                      //   ),
+                      // ),
+                      Container(
+                        height: 35,
+                        width: 250,
+                        // padding: EdgeInsets.all(5),
+                        // margin: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
                           color: Colors.white,
-                          fontWeight: FontWeight.w700,
-                          fontSize: 25
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: TextField(
+                          autofocus: true,
+                          decoration: InputDecoration(
+                            contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 10.0),
+                            //border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
+                            hintText: 'Search',
+                          ),
                         ),
                       ),
                       Spacer(),
@@ -116,42 +133,62 @@ class _HomeState extends State<Home> {
               ),
             ),
             SizedBox(height: 20,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                ActionChip(
-                  //avatar: Icon(Icons.favorite),
-                  label: Text(
-                    '  Rice  ',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w500,
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              padding: EdgeInsets.only(left: 5),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  ActionChip(
+                    //avatar: Icon(Icons.favorite),
+                    label: Text(
+                      '  Rice  ',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
+                    onPressed: () {},
+                    backgroundColor: biruTua,
                   ),
-                  onPressed: () {},
-                  backgroundColor: biruTua,
-                ),
-                ActionChip(
-                  //avatar: Icon(Icons.favorite),
-                  label: Text('Noodle'),
-                  onPressed: () {},
-                ),
-                ActionChip(
-                  //avatar: Icon(Icons.favorite),
-                  label: Text('Chicken'),
-                  onPressed: () {},
-                ),
-                ActionChip(
-                  //avatar: Icon(Icons.favorite),
-                  label: Text('  Soup  '),
-                  onPressed: () {},
-                ),
-                ActionChip(
-                  //avatar: Icon(Icons.favorite),
-                  label: Text('Coffee'),
-                  onPressed: () {},
-                ),
-              ],
+                  SizedBox(width: 8,),
+                  ActionChip(
+                    //avatar: Icon(Icons.favorite),
+                    label: Text('Noodle'),
+                    onPressed: () {},
+                  ),
+                  SizedBox(width: 8,),
+                  ActionChip(
+                    //avatar: Icon(Icons.favorite),
+                    label: Text('Chicken'),
+                    onPressed: () {},
+                  ),
+                  SizedBox(width: 8,),
+                  ActionChip(
+                    //avatar: Icon(Icons.favorite),
+                    label: Text('  Soup  '),
+                    onPressed: () {},
+                  ),
+                  SizedBox(width: 8,),
+                  ActionChip(
+                    //avatar: Icon(Icons.favorite),
+                    label: Text('Coffee'),
+                    onPressed: () {},
+                  ),
+                  SizedBox(width: 8,),
+                  ActionChip(
+                    //avatar: Icon(Icons.favorite),
+                    label: Text('Tea'),
+                    onPressed: () {},
+                  ),
+                  SizedBox(width: 8,),
+                  ActionChip(
+                    //avatar: Icon(Icons.favorite),
+                    label: Text('Boba'),
+                    onPressed: () {},
+                  ),
+                ],
+              ),
             ),
             SizedBox(height: 10,),
             Row(
@@ -177,11 +214,16 @@ class _HomeState extends State<Home> {
                       left: 13, 
                       right: 13
                     ),
-                    child: Image.asset(
-                      'assets/images/nasgor.jpg',
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          'assets/images/nasgor.jpg',
+                        ),
+                      ],
                     ),
                   ),
                   ListTile(
+                    onTap: (){},
                     contentPadding: EdgeInsets.only(left: 13),
                     title: Text(
                       'Nasi Goreng',
@@ -265,55 +307,7 @@ class _HomeState extends State<Home> {
       ),
       bottomNavigationBar: BottomAppBar(
           color: biruTua,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              //Padding(padding: EdgeInsets.all(10)),
-              IconButton(
-                //padding: EdgeInsets.only(left: 20, right: 15),
-                icon: 
-                Icon(Icons.home), 
-                onPressed: () {},
-                color: Colors.white,
-              ),
-              IconButton(
-                //padding: EdgeInsets.only(left: 33, right: 30),
-                icon: 
-                Icon(Icons.search), 
-                onPressed: () {},
-                color: Colors.white,
-              ),
-              IconButton(
-                //padding: EdgeInsets.only(left: 17, right: 30),
-                icon: 
-                Icon(Icons.notifications_outlined), 
-                onPressed: () {},
-                color: Colors.white,
-              ),
-              IconButton(
-                //padding: EdgeInsets.only(left: 20, right: 25),
-                icon: 
-                Icon(Icons.favorite_border_outlined), 
-                onPressed: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(
-                        builder: (context){
-                          return favorite();
-                        }
-                      )
-                    );
-                },
-                color: Colors.white,
-              ),
-              IconButton(
-                //padding: EdgeInsets.only(left: 25, right: 25),
-                icon: 
-                Icon(Icons.account_circle_outlined), 
-                onPressed: () {},
-                color: Colors.white,
-              ),
-            ],
-          ),
+          
         )
     );
   }

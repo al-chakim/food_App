@@ -1,4 +1,4 @@
-# foody
+# foodaddict
 
 A new Flutter project.
 
