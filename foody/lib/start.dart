@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foody/login.dart';
+import 'package:foodaddict/login.dart';
 import 'theme.dart';
 
 class Start extends StatelessWidget {

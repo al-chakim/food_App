@@ -1,10 +1,8 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:foody/home.dart';
-import 'package:foody/icons/my_icons_icons.dart';
-import 'package:foody/theme.dart';
+import 'package:foodaddict/home.dart';
+import 'package:foodaddict/icons/my_icons_icons.dart';
+import 'package:foodaddict/theme.dart';
 
 class login extends StatefulWidget {
   const login({ Key? key }) : super(key: key);
